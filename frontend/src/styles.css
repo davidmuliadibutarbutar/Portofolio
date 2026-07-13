@@ -13,6 +13,7 @@ html {
 body {
   margin: 0;
   min-width: 320px;
+  overflow-x: hidden;
   background: #f6f2e8;
   color: #1f2933;
 }

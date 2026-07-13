@@ -2,20 +2,20 @@
   <PublicLayout>
     <div v-if="store.loading" class="container-page py-24 text-slate-500">Loading portfolio...</div>
     <div v-else>
-      <section class="container-page grid min-h-[calc(100vh-4rem)] items-center gap-10 py-14 lg:grid-cols-[1.25fr_.75fr]">
+      <section class="container-page grid min-h-[calc(100vh-4rem)] items-center gap-10 py-10 sm:py-14 lg:grid-cols-[1.25fr_.75fr]">
         <div class="space-y-7">
           <div class="flex flex-wrap gap-2">
             <p class="inline-flex rounded-md border border-emerald-200 bg-emerald-50 px-3 py-1 text-sm text-emerald-700">{{ profile.location }}</p>
             <p class="inline-flex rounded-md border border-amber-200 bg-amber-50 px-3 py-1 text-sm text-amber-700">Backend · API · Database</p>
           </div>
           <div class="space-y-4">
-            <h1 class="max-w-4xl text-4xl font-bold leading-tight text-slate-950 sm:text-6xl">Hi, I'm {{ profile.name }}.</h1>
+            <h1 class="max-w-4xl break-words text-3xl font-bold leading-tight text-slate-950 sm:text-5xl lg:text-6xl">Hi, I'm {{ profile.name }}.</h1>
             <p class="max-w-2xl text-lg leading-8 text-slate-700">{{ profile.headline }}</p>
           </div>
-          <div class="flex flex-wrap gap-3">
-            <RouterLink to="/projects" class="btn-primary"><Briefcase class="h-4 w-4" />View Projects</RouterLink>
-            <a :href="apiUrl(profile.resume)" class="btn-muted" target="_blank"><Download class="h-4 w-4" />Download Resume</a>
-            <RouterLink to="/contact" class="btn-muted"><Mail class="h-4 w-4" />Contact Me</RouterLink>
+          <div class="grid gap-3 sm:flex sm:flex-wrap">
+            <RouterLink to="/projects" class="btn-primary w-full sm:w-auto"><Briefcase class="h-4 w-4" />View Projects</RouterLink>
+            <a :href="apiUrl(profile.resume)" class="btn-muted w-full sm:w-auto" target="_blank"><Download class="h-4 w-4" />Download Resume</a>
+            <RouterLink to="/contact" class="btn-muted w-full sm:w-auto"><Mail class="h-4 w-4" />Contact Me</RouterLink>
           </div>
         </div>
         <div v-if="profile.photo" class="panel mx-auto w-full max-w-sm overflow-hidden">
