@@ -1,5 +1,13 @@
 import { defineStore } from 'pinia';
-import { api, collections } from '../services/api';
+import { collections } from '../services/api';
+
+async function fetchCollection(name) {
+  const response = await fetch(`/data/${name}.json`, {
+    signal: AbortSignal.timeout(10000)
+  });
+  if (!response.ok) throw new Error(`Failed to load ${name}`);
+  return response.json();
+}
 
 export const usePortfolioStore = defineStore('portfolio', {
   state: () => ({
@@ -20,12 +28,12 @@ export const usePortfolioStore = defineStore('portfolio', {
       this.error = '';
       try {
         const [profile, ...items] = await Promise.all([
-          api.get('/profile'),
-          ...collections.map((name) => api.get(`/${name}`))
+          fetchCollection('profile'),
+          ...collections.map((name) => fetchCollection(name))
         ]);
-        this.profile = profile.data;
+        this.profile = profile;
         collections.forEach((name, index) => {
-          this[name] = items[index].data;
+          this[name] = items[index];
         });
       } catch (error) {
         this.error = error.response?.data?.message || 'Failed to load portfolio content';

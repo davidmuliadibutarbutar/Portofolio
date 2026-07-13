@@ -2,8 +2,11 @@ import fs from 'fs-extra';
 import path from 'node:path';
 import { randomUUID } from 'node:crypto';
 import { config } from '../config.js';
+import { seedData } from '../seedData.js';
 
 const fileFor = (collection) => path.join(config.dataDir, `${collection}.json`);
+const memoryData = structuredClone(seedData);
+const isServerless = Boolean(process.env.VERCEL);
 
 export async function ensureCollection(collection, fallback = []) {
   await fs.ensureDir(config.dataDir);
@@ -14,11 +17,16 @@ export async function ensureCollection(collection, fallback = []) {
 }
 
 export async function read(collection) {
+  if (isServerless) return structuredClone(memoryData[collection] ?? []);
   await ensureCollection(collection);
   return fs.readJson(fileFor(collection));
 }
 
 export async function write(collection, data) {
+  if (isServerless) {
+    memoryData[collection] = structuredClone(data);
+    return data;
+  }
   await fs.ensureDir(config.dataDir);
   await fs.writeJson(fileFor(collection), data, { spaces: 2 });
   return data;
