@@ -9,10 +9,11 @@
       "root": "backend",
       "framework": "express",
       "entrypoint": "src/server.js",
-      "includeFiles": [
-        "data/**",
-        "uploads/**"
-      ]
+      "functions": {
+        "src/server.js": {
+          "includeFiles": "{data,uploads}/**"
+        }
+      }
     }
   },
   "rewrites": [
