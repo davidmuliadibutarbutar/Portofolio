@@ -47,7 +47,7 @@ const coverImage = computed(() => props.project.images?.[0] || props.project.ima
 function imageUrl(path) {
   if (!path) return '';
   if (/^https?:\/\//.test(path)) return path;
-  const apiBase = import.meta.env.VITE_API_URL || 'http://localhost:3000/api';
+  const apiBase = import.meta.env.VITE_API_URL || '/api';
   return `${apiBase.replace('/api', '')}${path}`;
 }
 </script>

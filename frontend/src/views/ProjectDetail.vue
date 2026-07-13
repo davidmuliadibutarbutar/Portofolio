@@ -136,7 +136,7 @@ function nextImage() {
 
 function imageUrl(path) {
   if (/^https?:\/\//.test(path)) return path;
-  const apiBase = import.meta.env.VITE_API_URL || 'http://localhost:3000/api';
+  const apiBase = import.meta.env.VITE_API_URL || '/api';
   return `${apiBase.replace('/api', '')}${path}`;
 }
 </script>

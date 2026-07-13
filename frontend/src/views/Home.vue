@@ -127,5 +127,5 @@ const metrics = computed(() => [
   { value: '2022', label: 'Professional start', color: 'text-rose-700' }
 ]);
 const accentBars = ['bg-teal-500', 'bg-emerald-500', 'bg-amber-500', 'bg-rose-400', 'bg-sky-500'];
-const apiUrl = (path) => path?.startsWith('/uploads') ? `${import.meta.env.VITE_API_URL?.replace('/api', '') || 'http://localhost:3000'}${path}` : path;
+const apiUrl = (path) => path?.startsWith('/uploads') ? `${import.meta.env.VITE_API_URL?.replace('/api', '') || ''}${path}` : path;
 </script>
