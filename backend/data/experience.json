@@ -1,0 +1,31 @@
+[
+  {
+    "id": "1",
+    "company": "Wilmar Consultancy Services",
+    "position": "Software Engineer",
+    "location": "Medan, Indonesia",
+    "startDate": "2022-02-01",
+    "endDate": null,
+    "current": true,
+    "description": "Develop, maintain, and enhance enterprise applications, including web applications, backend services, REST APIs, database queries, reporting modules, approval workflows, and system integrations.",
+    "achievements": [
+      "Developed Facility Management System using Vue.js and .NET.",
+      "Built Transporter Rating System using Next.js, TypeScript, PostgreSQL, Prisma, Tailwind CSS, and NextAuth.",
+      "Developed Unmanned Weighbridge System with RFID and face recognition integration.",
+      "Implemented Traffic Control System integration for plant access and barrier gate workflows.",
+      "Improved database performance through SQL query optimization.",
+      "Supported QA testing, bug fixing, deployment, and production issue handling."
+    ],
+    "techStack": [
+      "C#",
+      ".NET",
+      "ASP.NET",
+      "SQL Server",
+      "PostgreSQL",
+      "Vue.js",
+      "Next.js",
+      "REST API",
+      "Kotlin"
+    ]
+  }
+]

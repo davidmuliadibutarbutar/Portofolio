@@ -1,0 +1,116 @@
+[
+  {
+    "id": "1",
+    "title": "Facility Management System",
+    "slug": "facility-management-system",
+    "description": "Developed a Facility Management System using Vue.js for billing, timesheet, permit, utility, complaint, tenant document, approval, and reporting management. Built a Vue 3 SPA using Vite, PrimeVue, Vuex, and Axios. Implemented authentication, RabbitMQ integration, role-based menus, form validation, REST API integration, localization, and export/print reporting features. Developed master data modules such as company, customer, location, department, price list, VAT terms, SAP material, approval matrix, and running number. Backend was built using .NET and ASP.NET.",
+    "image": "/uploads/projects/project-1783152265583.png",
+    "techStack": [
+      "Vue 3",
+      "Vite",
+      "PrimeVue",
+      "Vuex",
+      "Axios",
+      "RabbitMQ",
+      ".NET",
+      "ASP.NET",
+      "C#",
+      "PostgreSQL"
+    ],
+    "githubUrl": null,
+    "demoUrl": null,
+    "featured": true,
+    "category": "Enterprise Application",
+    "createdAt": "2024-01-01",
+    "updatedAt": "2026-07-04T08:20:46.434Z",
+    "images": [
+      "/uploads/projects/project-1783152265583.png",
+      "/uploads/projects/project-1783152895510.png",
+      "/uploads/projects/project-1783153244890.png"
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Transporter Rating System",
+    "slug": "transporter-rating-system",
+    "description": "Developed a Transporter Rating System using Next.js, TypeScript, PostgreSQL, Prisma, Tailwind CSS, and NextAuth. Built role-based access control for Admin, Participant, and Viewer. Implemented master data, survey period management, questionnaire builder, survey entry, draft workflow, submission tracking, and audit log. Created dashboard and reporting features for transporter performance with filtering, ranking score, Excel/CSV export, reminder email, and radar chart analysis. Integrated PostgreSQL using Prisma ORM and implemented form validation using React Hook Form and Zod.",
+    "image": "/uploads/projects/project-1783152328360.png",
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma",
+      "Tailwind CSS",
+      "NextAuth",
+      "React Hook Form",
+      "Zod"
+    ],
+    "githubUrl": null,
+    "demoUrl": null,
+    "featured": true,
+    "category": "Enterprise Application",
+    "createdAt": "2024-06-01",
+    "updatedAt": "2026-07-04T08:05:29.756Z"
+  },
+  {
+    "id": "3",
+    "title": "Goods Release System",
+    "slug": "goods-release-system",
+    "description": "Built an application for goods release and goods reporting processes from factory operations using ASP.NET Web Forms and SQL Server. Implemented approval matrix workflows, master data management for company, location, department, goods type, UOM, release reason, document, group, and user. Developed transaction creation, transaction list, approval process, report list, report detail, and matrix reporting modules.",
+    "image": "/uploads/projects/project-1783152375853.png",
+    "techStack": [
+      "C#",
+      "ASP.NET",
+      "ASPX Web Forms",
+      "SQL Server"
+    ],
+    "githubUrl": null,
+    "demoUrl": null,
+    "featured": false,
+    "category": "Enterprise Application",
+    "createdAt": "2023-06-01",
+    "updatedAt": "2026-07-04T08:06:18.182Z"
+  },
+  {
+    "id": "4",
+    "title": "Unmanned Weighbridge System",
+    "slug": "unmanned-weighbridge-system",
+    "description": "Developed an Unmanned Weighbridge System using multiple .NET-based platforms, including desktop, web forms, REST APIs, Kotlin, and SQL Server. Improved database performance through query tuning. The system supports integrated weighing processes using RFID cards and face recognition through Hikvision integration. Developed Traffic Control System modules for plant access through barrier gates. Built complex integrations for truck registration before entering plant areas. Developed an Android application using Kotlin for security checking after operator registration. The system has been rolled out across several locations in Indonesia.",
+    "image": "/uploads/projects/project-1783152523390.png",
+    "techStack": [
+      "C#",
+      ".NET",
+      "ASP.NET",
+      "Kotlin",
+      "SQL Server",
+      "REST API",
+      "RFID",
+      "Hikvision"
+    ],
+    "githubUrl": null,
+    "demoUrl": null,
+    "featured": false,
+    "category": "Enterprise Application",
+    "createdAt": "2023-01-01",
+    "updatedAt": "2026-07-04T08:08:44.457Z"
+  },
+  {
+    "id": "5",
+    "title": "Learning Dashboard",
+    "slug": "learning-dashboard",
+    "description": "Built a Learning Dashboard project using .NET Framework and SQL Server. The application supports reporting processes for an internal company training center. Implemented approval transaction workflows using a release matrix feature that automatically collects approval destinations based on created documents. Developed master data modules such as company, location, cost list, department, division, grade level, user, release matrix, vendor list and profile, and student list and profile.",
+    "image": "/uploads/projects/project-1783152432101.png",
+    "techStack": [
+      "C#",
+      ".NET Framework",
+      "SQL Server",
+      "ASP.NET"
+    ],
+    "githubUrl": null,
+    "demoUrl": null,
+    "featured": false,
+    "category": "Enterprise Application",
+    "createdAt": "2023-09-01",
+    "updatedAt": "2026-07-04T08:07:13.358Z"
+  }
+]

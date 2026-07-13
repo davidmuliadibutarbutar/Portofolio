@@ -1,0 +1,86 @@
+[
+  {
+    "id": "1",
+    "name": "C#",
+    "category": "Programming Language",
+    "level": 85,
+    "icon": "c#"
+  },
+  {
+    "id": "2",
+    "name": ".NET",
+    "category": "Framework",
+    "level": 85,
+    "icon": ".net"
+  },
+  {
+    "id": "3",
+    "name": "ASP.NET",
+    "category": "Framework",
+    "level": 80,
+    "icon": "asp.net"
+  },
+  {
+    "id": "4",
+    "name": "Vue.js",
+    "category": "Frontend",
+    "level": 80,
+    "icon": "vue.js"
+  },
+  {
+    "id": "5",
+    "name": "Next.js",
+    "category": "Frontend",
+    "level": 75,
+    "icon": "next.js"
+  },
+  {
+    "id": "6",
+    "name": "TypeScript",
+    "category": "Programming Language",
+    "level": 75,
+    "icon": "typescript"
+  },
+  {
+    "id": "7",
+    "name": "SQL Server",
+    "category": "Database",
+    "level": 85,
+    "icon": "sql-server"
+  },
+  {
+    "id": "8",
+    "name": "PostgreSQL",
+    "category": "Database",
+    "level": 80,
+    "icon": "postgresql"
+  },
+  {
+    "id": "9",
+    "name": "REST API",
+    "category": "Backend",
+    "level": 85,
+    "icon": "rest-api"
+  },
+  {
+    "id": "10",
+    "name": "Kotlin",
+    "category": "Programming Language",
+    "level": 70,
+    "icon": "kotlin"
+  },
+  {
+    "id": "11",
+    "name": "Prisma",
+    "category": "ORM",
+    "level": 70,
+    "icon": "prisma"
+  },
+  {
+    "id": "12",
+    "name": "Tailwind CSS",
+    "category": "Frontend",
+    "level": 75,
+    "icon": "tailwind-css"
+  }
+]

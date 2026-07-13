@@ -1,0 +1,12 @@
+[
+  {
+    "id": "1",
+    "institution": "Del Institute of Technology",
+    "degree": "Bachelor's Degree",
+    "field": "Information Technology",
+    "startDate": null,
+    "endDate": null,
+    "gpa": "3.03/4.00",
+    "description": "Studied Information Technology with focus on software development, databases, and information systems."
+  }
+]

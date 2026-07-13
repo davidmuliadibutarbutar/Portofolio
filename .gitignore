@@ -5,11 +5,7 @@ node_modules/
 .env
 .env.local
 
-# Data & Uploads (don't commit actual data)
-backend/data/*.json
-!backend/data/.gitkeep
-backend/uploads/*
-!backend/uploads/.gitkeep
+# Portfolio content deployed with the application
 
 # Build outputs
 frontend/dist/
