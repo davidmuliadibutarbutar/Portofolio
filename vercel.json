@@ -7,7 +7,12 @@
     },
     "backend": {
       "root": "backend",
-      "framework": "express"
+      "framework": "express",
+      "entrypoint": "src/server.js",
+      "includeFiles": [
+        "data/**",
+        "uploads/**"
+      ]
     }
   },
   "rewrites": [

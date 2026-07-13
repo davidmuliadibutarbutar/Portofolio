@@ -41,6 +41,10 @@ if (await fs.pathExists(frontendDist)) {
 app.use(notFound);
 app.use(errorHandler);
 
-app.listen(config.port, () => {
-  console.log(`Portfolio API running at http://localhost:${config.port}/api`);
-});
+if (!process.env.VERCEL) {
+  app.listen(config.port, () => {
+    console.log(`Portfolio API running at http://localhost:${config.port}/api`);
+  });
+}
+
+export default app;
